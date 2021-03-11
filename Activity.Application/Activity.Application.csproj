@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.9" />
+    <PackageReference Include="Senparc.Weixin" Version="6.7.600" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Activity.Interfaces.Application\Activity.Interfaces.Application.csproj" />
+    <ProjectReference Include="..\JKCore.Domain\JKCore.Domain.csproj" />
+    <ProjectReference Include="..\JKCore.Infrastructure\JKCore.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

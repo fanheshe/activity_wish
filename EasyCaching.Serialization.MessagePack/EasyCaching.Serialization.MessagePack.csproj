@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  
+  <ItemGroup>
+    <PackageReference Include="EasyCaching.Core" Version="0.5.6" />
+    <PackageReference Include="MessagePack" Version="1.7.3.4" />    
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet>JKCore.Infrastructure.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>JKCore.Infrastructure.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="QcloudSms\**" />
+    <EmbeddedResource Remove="QcloudSms\**" />
+    <None Remove="QcloudSms\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.60.1" />
+    <PackageReference Include="Dapper.SimpleCRUD" Version="2.1.0" />
+    <PackageReference Include="LazZiya.ImageResize" Version="3.0.2" />
+    <PackageReference Include="EPPlus" Version="4.5.3.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.2.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.10.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.17" />
+    <PackageReference Include="QRCoder" Version="1.3.9" />
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta0006" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JKCore.Domain\JKCore.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

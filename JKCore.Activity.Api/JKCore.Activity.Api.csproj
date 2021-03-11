@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Coravel" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.9" />
+    <PackageReference Include="Senparc.Weixin.MP" Version="16.10.601" />
+     <PackageReference Include="Senparc.Weixin.TenPay" Version="1.5.502.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Senparc.Weixin.WxOpen" Version="3.8.601" />
+    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Activity.Application\Activity.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\File\" />
+    <Folder Include="wwwroot\Image\" />
+  </ItemGroup>
+
+
+</Project>
